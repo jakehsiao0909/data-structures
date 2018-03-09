@@ -7,15 +7,18 @@ var Set = function() {
 
 var setPrototype = {};
 
+  //TimeComplexity: O(1)
 setPrototype.add = function(item) {
   this._storage[item] = item;
   this.size++;
 };
 
+  //TimeComplexity:O(n)
 setPrototype.contains = function(item) {
   return this._storage.hasOwnProperty(item);
 };
 
+  //TimeComplexity: O(1)
 setPrototype.remove = function(item) {
   var removed = this._storage[item]
   delete this._storage[item]

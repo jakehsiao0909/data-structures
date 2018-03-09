@@ -7,6 +7,7 @@ var BinarySearchTree = function(value) {
   return someTree;
 };
 
+  //TimeComplexity: O(log n)
 BinarySearchTree.prototype.insert = function(value) {
 
 
@@ -29,7 +30,7 @@ BinarySearchTree.prototype.insert = function(value) {
   }
 };
 
-
+  //TimeComplexity: O(log n)
 BinarySearchTree.prototype.contains = function(target) {
   if (this.value === target) return true;
 
@@ -49,7 +50,7 @@ BinarySearchTree.prototype.contains = function(target) {
 };
 
 
-
+  //TimeComplexity: O(n)
 BinarySearchTree.prototype.depthFirstLog = function(callback) {
   function recurseTree(tree){
     callback.call(tree,tree.value);

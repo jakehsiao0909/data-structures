@@ -13,11 +13,13 @@ var Tree = function(value) {
 
 var treeMethods = {};
 
+  //TimeComplexity: O(1)
 treeMethods.addChild = function(value) {
   var child = Tree(value);
   this.children.push(child);
 };
 
+  //TimeComplexity: O(n)
 treeMethods.contains = function(target) {
   if(this.value === target) {
     return true;
